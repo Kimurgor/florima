@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Florima helps teams integrate AI, automate workflows, and ship practical operations systems."
+    />
+    <title>Florima | AI Automation Consulting</title>
+    <link rel="preload" href="/assets/ai-workflow-hero.png" as="image" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="site-header" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Florima home">
+        <span class="brand-mark">F</span>
+        <span>Florima</span>
+      </a>
+      <nav class="nav-links" aria-label="Site links">
+        <a href="#services">Services</a>
+        <a href="#process">Process</a>
+        <a href="#proof">Proof</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <img
+          class="hero-media"
+          src="/assets/ai-workflow-hero.png"
+          alt="Abstract AI workflow automation system with connected data paths"
+        />
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow">AI automation and workflow consulting</p>
+          <h1>Turn scattered operations into intelligent systems.</h1>
+          <p class="hero-copy">
+            Florima designs and deploys practical AI integrations, automations,
+            and workflow improvements that reduce manual work without adding
+            operational drag.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#contact">Book a Call</a>
+            <a class="button secondary" href="#services">View Services</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section intro-band" aria-label="Business outcomes">
+        <div class="metric">
+          <strong>30-70%</strong>
+          <span>less repetitive admin work</span>
+        </div>
+        <div class="metric">
+          <strong>2-6 weeks</strong>
+          <span>from discovery to working automation</span>
+        </div>
+        <div class="metric">
+          <strong>Human-led</strong>
+          <span>AI systems with review points and controls</span>
+        </div>
+      </section>
+
+      <section class="section" id="services">
+        <div class="section-heading">
+          <p class="eyebrow">Services</p>
+          <h2>AI systems built around the way your team actually works.</h2>
+        </div>
+        <div class="services-grid">
+          <article class="card service-card">
+            <span class="icon">01</span>
+            <h3>AI Integration</h3>
+            <p>
+              Connect AI models to your CRM, support inbox, documents, and
+              internal tools with secure data flows and practical guardrails.
+            </p>
+          </article>
+          <article class="card service-card">
+            <span class="icon">02</span>
+            <h3>Workflow Automation</h3>
+            <p>
+              Replace repetitive handoffs with reliable automations for intake,
+              routing, reporting, follow-ups, approvals, and knowledge work.
+            </p>
+          </article>
+          <article class="card service-card">
+            <span class="icon">03</span>
+            <h3>Consulting</h3>
+            <p>
+              Map high-value opportunities, prioritize implementation paths,
+              and train teams to operate AI-enabled workflows responsibly.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section process-section" id="process">
+        <div class="section-heading">
+          <p class="eyebrow">How it works</p>
+          <h2>A focused path from messy workflow to measurable automation.</h2>
+        </div>
+        <div class="process-list">
+          <article>
+            <span>1</span>
+            <h3>Audit</h3>
+            <p>Review current workflows, tool stack, bottlenecks, and data access.</p>
+          </article>
+          <article>
+            <span>2</span>
+            <h3>Design</h3>
+            <p>Define the target process, AI role, review points, and success metrics.</p>
+          </article>
+          <article>
+            <span>3</span>
+            <h3>Build</h3>
+            <p>Ship lightweight integrations, automations, dashboards, and prompts.</p>
+          </article>
+          <article>
+            <span>4</span>
+            <h3>Improve</h3>
+            <p>Measure performance, refine edge cases, and document the operating model.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section proof-section" id="proof">
+        <div class="section-heading">
+          <p class="eyebrow">Social proof</p>
+          <h2>Trusted by operators who need AI to do real work.</h2>
+        </div>
+        <div class="proof-grid">
+          <blockquote class="card">
+            "Florima helped us move from manual follow-ups to an automated
+            client intake flow our whole team can trust."
+            <cite>Operations Lead, B2B Services</cite>
+          </blockquote>
+          <blockquote class="card">
+            "The biggest win was clarity. We knew exactly where AI belonged and
+            where human review still mattered."
+            <cite>Founder, Growth Consultancy</cite>
+          </blockquote>
+          <blockquote class="card">
+            "A practical implementation partner for teams that want outcomes,
+            not another abstract AI strategy deck."
+            <cite>Head of Revenue, SaaS Company</cite>
+          </blockquote>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div class="contact-copy">
+          <p class="eyebrow">Contact</p>
+          <h2>Ready to automate the work that slows your team down?</h2>
+          <p>
+            Share the workflow you want to improve. You will get a focused
+            response on the best next step.
+          </p>
+          <div class="contact-details">
+            <a href="mailto:hello@florima.io">hello@florima.io</a>
+            <a href="https://www.linkedin.com" rel="noreferrer">LinkedIn</a>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contact-form" action="/api/contact" method="post">
+          <label>
+            Name
+            <input type="text" name="name" autocomplete="name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" autocomplete="email" required />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <button class="button primary" type="submit">Get Started</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <a class="brand" href="#top">
+          <span class="brand-mark">F</span>
+          <span>Florima</span>
+        </a>
+        <p>AI automation consulting for lean, practical operations.</p>
+      </div>
+      <div class="footer-links">
+        <a href="mailto:hello@florima.io">hello@florima.io</a>
+        <a href="https://www.linkedin.com" rel="noreferrer">LinkedIn</a>
+        <a href="https://x.com" rel="noreferrer">X</a>
+      </div>
+    </footer>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
