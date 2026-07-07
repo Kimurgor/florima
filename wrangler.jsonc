@@ -1,14 +1,13 @@
 {
-  "$schema": "node_modules/wrangler/config-schema.json",
   "name": "florima",
   "compatibility_date": "2026-07-07",
-  "assets": {
-    "directory": "public"
+  "observability": {
+    "enabled": true
   },
   "build": {
     "command": "hugo --gc --minify"
   },
-  "observability": {
-    "enabled": true
+  "assets": {
+    "directory": "public"
   }
 }
