@@ -38,9 +38,9 @@ For direct Wrangler deploys, use:
 npm run deploy
 ```
 
-If your Cloudflare project currently uses `npx wrangler deploy`, change it to
-`npm run deploy` so Wrangler deploys the generated Hugo `public/` directory as a
-Pages site.
+If your Cloudflare project currently uses `npx wrangler deploy`, this repo also
+includes `wrangler.jsonc`, which tells Wrangler to run `npm run build` before
+deploying the generated Hugo `public/` directory.
 
 The contact function accepts `POST /api/contact` with `name`, `email`, and `message`.
 
