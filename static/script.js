@@ -2,9 +2,11 @@ const form = document.querySelector("#contact-form");
 const statusEl = document.querySelector("#form-status");
 
 if (form && statusEl) {
+  const statusBaseClass = "min-h-6 text-florima-muted";
+
   form.addEventListener("submit", async (event) => {
     event.preventDefault();
-    statusEl.className = "form-status";
+    statusEl.className = statusBaseClass;
     statusEl.textContent = "Sending...";
 
     const payload = Object.fromEntries(new FormData(form).entries());
@@ -26,10 +28,10 @@ if (form && statusEl) {
       }
 
       form.reset();
-      statusEl.classList.add("success");
+      statusEl.className = "min-h-6 text-florima-purple";
       statusEl.textContent = data.message || "Thanks. Your message has been sent.";
     } catch (error) {
-      statusEl.classList.add("error");
+      statusEl.className = "min-h-6 text-red-700";
       statusEl.textContent = error.message || "Something went wrong. Please try again.";
     }
   });

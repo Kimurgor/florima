@@ -1,0 +1,7 @@
+baseURL = "https://florima.io/"
+languageCode = "en-us"
+title = "Florima"
+disableKinds = ["taxonomy", "term"]
+
+[params]
+description = "Florima is a full-service AI automation agency for bots, workflows, CRM, lead management, and operations."
