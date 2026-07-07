@@ -6,7 +6,7 @@
     "directory": "public"
   },
   "build": {
-    "command": "npm run build"
+    "command": "hugo --gc --minify"
   },
   "observability": {
     "enabled": true
