@@ -1,0 +1,20 @@
+<section class="bg-[radial-gradient(ellipse_at_50%_0%,rgba(255,246,236,0.92),transparent_42rem),radial-gradient(ellipse_at_15%_100%,rgba(250,162,64,0.22),transparent_28rem),linear-gradient(180deg,#FFF6EC_0%,#ffffff_100%)] text-florima-ink" id="process">
+  {{ $d := .Site.Data.content.process }}
+  <div class="mx-auto w-[min(1180px,calc(100%_-_40px))] py-24">
+    <div class="mb-9 grid gap-5 lg:grid-cols-[minmax(0,1fr)_minmax(280px,420px)] lg:items-end">
+      <div>
+        <p class="mb-4 text-xs font-medium uppercase tracking-[0.13em] text-florima-purple">{{ $d.badge }}</p>
+        <h2 class="max-w-[820px] text-[clamp(1.6rem,3.2vw,2.3rem)] font-medium leading-tight tracking-normal">{{ $d.title }}</h2>
+      </div>
+      <p class="text-florima-muted">{{ $d.description }}</p>
+    </div>
+    <div class="grid overflow-hidden rounded-lg border border-[#27272A1F] bg-white/60 md:grid-cols-3">
+      {{ range $i, $s := $d.steps }}
+      <article class="relative overflow-hidden transition-[transform,border-color,box-shadow] duration-200 ease-out hover:-translate-y-1 hover:border-[rgba(235,91,25,0.42)] hover:shadow-[0_28px_70px_rgba(9,9,11,0.14)] before:content-[''] before:absolute before:inset-0 before:pointer-events-none before:opacity-0 before:bg-[radial-gradient(circle_at_18%_0%,rgba(235,91,25,0.2),transparent_14rem),linear-gradient(180deg,rgba(255,255,255,0.08),transparent_46%)] before:transition-opacity before:duration-200 before:ease-out hover:before:opacity-100 min-h-[230px] bg-white/55 p-7{{ if lt $i (sub (len $d.steps) 1) }} border-b border-[#27272A1F] md:border-b-0 md:border-r{{ end }}">
+        <span class="mb-10 block font-medium text-florima-ink lg:mb-[76px]">{{ $s.number }} - {{ $s.title }}</span>
+        <p class="text-florima-muted">{{ $s.description }}</p>
+      </article>
+      {{ end }}
+    </div>
+  </div>
+</section>

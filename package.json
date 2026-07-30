@@ -6,8 +6,8 @@
   "scripts": {
     "build": "hugo --minify --cleanDestinationDir",
     "deploy": "hugo --minify --cleanDestinationDir && npx wrangler pages deploy public --project-name=florima",
-    "start": "hugo server --bind 127.0.0.1 --port 8088",
-    "serve": "hugo server --bind 127.0.0.1 --port 8088",
+    "start": "hugo server --bind 127.0.0.1",
+    "serve": "hugo server --bind 127.0.0.1",
     "test:function": "node tests/contact-function.test.js"
   }
 }

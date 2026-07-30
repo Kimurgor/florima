@@ -1,0 +1,19 @@
+<section class="mx-auto w-[min(1180px,calc(100%_-_40px))] py-24" id="platform">
+  {{ $d := .Site.Data.content.platform }}
+  <div class="mb-9 grid gap-5 lg:grid-cols-[minmax(0,1fr)_minmax(280px,420px)] lg:items-end">
+    <div>
+      <p class="mb-4 text-xs font-medium uppercase tracking-[0.13em] text-florima-purple">{{ $d.badge }}</p>
+      <h2 class="max-w-[820px] text-[clamp(1.6rem,3.2vw,2.3rem)] font-medium leading-tight tracking-normal">{{ $d.title }}</h2>
+    </div>
+    <p class="text-florima-muted">{{ $d.description }}</p>
+  </div>
+  <div class="grid overflow-hidden rounded-lg border border-[#27272A1F] bg-white lg:grid-cols-3">
+    {{ range $i, $f := $d.features }}
+    <article class="relative overflow-hidden transition-[transform,border-color,box-shadow] duration-200 ease-out hover:-translate-y-1 hover:border-[rgba(235,91,25,0.42)] hover:shadow-[0_28px_70px_rgba(9,9,11,0.14)] before:content-[''] before:absolute before:inset-0 before:pointer-events-none before:opacity-0 before:bg-[radial-gradient(circle_at_18%_0%,rgba(235,91,25,0.12),transparent_15rem),linear-gradient(180deg,rgba(255,255,255,0.72),transparent_42%)] before:transition-opacity before:duration-200 before:ease-out hover:before:opacity-100 min-h-[270px] p-7{{ if lt $i (sub (len $d.features) 1) }} border-b border-[#27272A1F] lg:border-b-0 lg:border-r{{ end }}">
+      <span class="mb-[60px] grid h-[42px] w-[42px] place-items-center rounded-lg bg-florima-soft font-medium text-florima-deep">{{ $f.step }}</span>
+      <h3 class="mb-3 text-lg font-medium leading-tight">{{ $f.title }}</h3>
+      <p class="text-florima-muted">{{ $f.description }}</p>
+    </article>
+    {{ end }}
+  </div>
+</section>

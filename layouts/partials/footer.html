@@ -1,0 +1,86 @@
+<footer style="background-color: #fffefb; color: #09090B;">
+  {{ $d := .Site.Data.content.footer }}
+  <div class="mx-auto w-[min(1180px,calc(100%_-_40px))] py-16">
+    <div class="grid gap-12 md:grid-cols-[minmax(0,1.4fr)_1fr_1fr_1.2fr]">
+
+      <!-- Brand column -->
+      <div>
+        <a class="inline-flex items-center" href="#" aria-label="Florima home">
+          <img src="{{ .Site.Data.content.header.logo.src }}" alt="{{ .Site.Data.content.header.logo.alt }}" class="h-6 w-auto md:h-8" />
+        </a>
+        <p class="mb-6 mt-4 max-w-[220px] text-sm leading-relaxed text-[#09090B]/50">{{ $d.description }}</p>
+        <div class="flex gap-3">
+          <!-- Facebook -->
+          <a href="https://facebook.com" rel="noreferrer" class="grid h-9 w-9 place-items-center rounded-lg border text-[#09090B]/60 transition hover:border-[#eb5b19]/50 hover:text-[#09090B]" style="border-color: #eceae3; background-color: #f5f3ec;" aria-label="Facebook">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <!-- Instagram -->
+          <a href="https://instagram.com" rel="noreferrer" class="grid h-9 w-9 place-items-center rounded-lg border text-[#09090B]/60 transition hover:border-[#eb5b19]/50 hover:text-[#09090B]" style="border-color: #eceae3; background-color: #f5f3ec;" aria-label="Instagram">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <!-- X / Twitter -->
+          <a href="https://x.com" rel="noreferrer" class="grid h-9 w-9 place-items-center rounded-lg border text-[#09090B]/60 transition hover:border-[#eb5b19]/50 hover:text-[#09090B]" style="border-color: #eceae3; background-color: #f5f3ec;" aria-label="X">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.748l7.73-8.835L1.254 2.25H8.08l4.254 5.622 5.91-5.622Zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Menu column -->
+      <div>
+        <h3 class="mb-5 text-xs font-medium uppercase tracking-[0.1em] text-[#09090B]">{{ $d.columns.menu.title }}</h3>
+        <ul class="grid gap-3">
+          {{ range $d.columns.menu.links }}
+          <li><a href="{{ .url }}" class="text-sm text-[#09090B]/55 transition hover:text-[#09090B]">{{ .label }}</a></li>
+          {{ end }}
+        </ul>
+      </div>
+
+      <!-- Services column -->
+      <div>
+        <h3 class="mb-5 text-xs font-medium uppercase tracking-[0.1em] text-[#09090B]">{{ $d.columns.services.title }}</h3>
+        <ul class="grid gap-3">
+          {{ range $d.columns.services.links }}
+          <li><a href="{{ .url }}" class="text-sm text-[#09090B]/55 transition hover:text-[#09090B]">{{ .label }}</a></li>
+          {{ end }}
+        </ul>
+      </div>
+
+      <!-- Contact column -->
+      <div>
+        <h3 class="mb-5 text-xs font-medium uppercase tracking-[0.1em] text-[#09090B]">{{ $d.columns.contact.title }}</h3>
+        <ul class="grid gap-4">
+          <li class="flex items-start gap-3">
+            <span class="mt-0.5 grid h-7 w-7 shrink-0 place-items-center rounded-lg bg-[#eb5b19]/15 text-[#eb5b19]">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.64 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.55 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </span>
+            <a href="tel:{{ $d.columns.contact.phone }}" class="text-sm text-[#09090B]/55 transition hover:text-[#09090B]">{{ $d.columns.contact.phone }}</a>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-0.5 grid h-7 w-7 shrink-0 place-items-center rounded-lg bg-[#eb5b19]/15 text-[#eb5b19]">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </span>
+            <a href="mailto:{{ $d.columns.contact.email }}" class="text-sm text-[#09090B]/55 transition hover:text-[#09090B]">{{ $d.columns.contact.email }}</a>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-0.5 grid h-7 w-7 shrink-0 place-items-center rounded-lg bg-[#eb5b19]/15 text-[#eb5b19]">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </span>
+            <span class="text-sm text-[#09090B]/55">{{ $d.columns.contact.address_line1 }}<br>{{ $d.columns.contact.address_line2 }}</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Bottom bar -->
+  <div class="border-t" style="border-color: #eceae3;">
+    <div class="mx-auto flex w-[min(1180px,calc(100%_-_40px))] flex-wrap items-center justify-between gap-4 py-5">
+      <p class="text-xs text-[#09090B]/35">&copy;{{ $d.copyright }} {{ now.Year }}. All rights reserved.</p>
+      <div class="flex items-center gap-4 divide-x" style="border-color: #eceae3;">
+        <a href="{{ $d.privacy.url }}" class="text-xs text-[#09090B]/35 transition hover:text-[#09090B]">{{ $d.privacy.label }}</a>
+        <a href="{{ $d.terms.url }}" class="pl-4 text-xs text-[#09090B]/35 transition hover:text-[#09090B]">{{ $d.terms.label }}</a>
+      </div>
+    </div>
+  </div>
+</footer>

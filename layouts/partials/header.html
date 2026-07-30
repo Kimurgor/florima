@@ -1,0 +1,11 @@
+<header class="sticky top-0 z-20 grid grid-cols-[auto_auto] items-center gap-4 border-b px-4 py-3 backdrop-blur-xl md:grid-cols-[auto_1fr_auto] md:gap-7 md:px-[clamp(20px,4vw,52px)] md:py-4" style="border-color: #eceae3; background-color: #fffefb;" aria-label="Primary navigation">
+  <a class="inline-flex items-center" href="#" aria-label="Florima home">
+    <img src="{{ .Site.Data.content.header.logo.src }}" alt="{{ .Site.Data.content.header.logo.alt }}" class="h-4 w-auto md:h-6" />
+  </a>
+  <nav class="hidden justify-center gap-[clamp(16px,2vw,30px)] text-[0.94rem] font-regular text-[#09090B] md:flex" aria-label="Site links">
+    {{ range .Site.Data.content.header.nav }}
+    <a class="hover:text-[#eb5b19]" href="{{ .url }}">{{ .label }}</a>
+    {{ end }}
+  </nav>
+  <a class="inline-flex min-h-9 items-center justify-center rounded-lg border border-[#eb5b19] bg-[#eb5b19] px-3 py-1.5 text-[0.84rem] font-medium text-white transition hover:-translate-y-0.5 hover:bg-[#d44e14] md:min-h-10 md:px-4 md:py-2 md:text-[0.92rem]" href="{{ .Site.Data.content.header.cta.url }}">{{ .Site.Data.content.header.cta.label }}</a>
+</header>

@@ -1,0 +1,43 @@
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="{{ .Site.Params.description }}" />
+<title>{{ .Site.Title }} | AI Automation Agency</title>
+
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          florima: {
+            bg: "#fffefb",
+            ink: "#09090B",
+            muted: "#52525B",
+            accent: "#eb5b19",
+            soft: "#FFF1E5",
+            highlight: "#FAA240",
+            border: "#eceae3",
+          },
+        },
+        boxShadow: {
+          premium: "0 36px 96px rgba(9, 9, 11, 0.22)",
+          card: "0 18px 46px rgba(9, 9, 11, 0.08)",
+        },
+        fontFamily: {
+          sans: ["Geist", "ui-sans-serif", "system-ui", "Helvetica Neue", "Helvetica", "Arial", "sans-serif"],
+        },
+        maxWidth: {
+          page: "1180px",
+        },
+      },
+    },
+  };
+</script>

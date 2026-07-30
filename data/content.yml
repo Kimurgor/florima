@@ -1,0 +1,217 @@
+header:
+  logo:
+    src: "/assets/logo.png"
+    alt: "Florima.io"
+  nav:
+    - label: "About"
+      url: "#platform"
+    - label: "Services"
+      url: "#services"
+    - label: "Process"
+      url: "#process"
+    - label: "Pricing"
+      url: "#pricing"
+  cta:
+    label: "Get Started"
+    url: "#contact"
+
+hero:
+  badge: "Automation, simplified"
+  title:
+    line1: "The automation stack behind"
+    line2: "faster-growing businesses."
+  description: "One platform for your bots, workflows, and operations — built to scale from day one."
+  buttons:
+    primary:
+      label: "Get Started"
+      url: "#contact"
+    secondary:
+      label: "Explore Services"
+      url: "#services"
+  stats:
+    - value: "24/7"
+      label: "AI support"
+    - value: "5,000+"
+      label: "Interactions/mo"
+    - value: "3 steps"
+      label: "To automation"
+
+logo_strip:
+  items:
+    - "CRM"
+    - "Chatbots"
+    - "Workflows"
+    - "Lead AI"
+    - "Support"
+    - "CRM"
+    - "Chatbots"
+    - "Workflows"
+    - "Lead AI"
+    - "Support"
+
+platform:
+  badge: "About"
+  title: "We're a Full-Service AI Automation Agency."
+  description: "We specialize in transforming how businesses operate through smart, scalable, and efficient AI automation solutions."
+  features:
+    - step: "01"
+      title: "Eliminate Repetitive Tasks"
+      description: "We identify manual work that slows your team down and replace it with reliable automation."
+    - step: "02"
+      title: "Streamline Workflows"
+      description: "Our systems connect your tools, improve handoffs, and keep operations moving efficiently."
+    - step: "03"
+      title: "Empower Your Team"
+      description: "We help teams focus on high-impact work instead of repetitive operational drag."
+
+services:
+  badge: "Services"
+  title: "We're A Full-Service AI Automation Agency."
+  description: "Unlock the power of automation with our end-to-end AI solutions. From strategy to deployment, we streamline your business operations for maximum efficiency and growth."
+  cards:
+    - title: "AI Chatbots & Support Agents"
+      description: "Our AI-powered chatbots and virtual support agents streamline your customer service, reduce human workload, and deliver instant, accurate, and multilingual assistance across all platforms."
+      items:
+        - "24/7 Instant Support"
+        - "Smart Conversations"
+        - "Human-like Interactions"
+        - "Seamless Handoff to Humans"
+      cta:
+        label: "Get Started Now"
+        url: "#contact"
+    - title: "Workflow & Process Automation"
+      description: "Streamline your operations and eliminate repetitive tasks with intelligent workflow and process automation. By leveraging AI-powered systems, businesses can improve efficiency and reduce manual errors."
+      items:
+        - "Boost Team Productivity"
+        - "Scalable & Customizable"
+        - "Automate Repetitive Tasks"
+        - "Reduce Human Errors"
+      cta:
+        label: "Get Started Now"
+        url: "#contact"
+    - title: "CRM & Lead Management AI"
+      description: "Harness the power of AI to supercharge your customer relationship management. AI-driven CRM and lead management tools help you capture, qualify, and convert leads faster while keeping your customer data organized, actionable, and insightful."
+      items:
+        - "AI-Powered Lead Scoring"
+        - "Automated Follow-Ups"
+        - "Predictive Analytics"
+        - "360 Customer Profiles"
+      cta:
+        label: "Get Started Now"
+        url: "#contact"
+
+process:
+  badge: "How it Works"
+  title: "From Idea to Automation in 3 Steps."
+  description: "Discover how our AI-powered automation solutions have transformed businesses across industries. From streamlining operations to enhancing customer experiences."
+  steps:
+    - number: "001"
+      title: "Discovery & Strategy"
+      description: "We analyze your processes and identify automation opportunities."
+    - number: "002"
+      title: "Custom AI Implementation"
+      description: "We design and deploy automation solutions tailored to your needs."
+    - number: "003"
+      title: "Optimization & Support"
+      description: "We monitor, improve, and scale your automation systems."
+
+proof:
+  badge: "Support Plans"
+  title: "Monthly Support Plans."
+  description: "Keep your automations reliable, secure, and improving with ongoing technical support tailored to your business."
+  plans:
+    - title: "Basic Support"
+      price: "KSh 5,000"
+      period: "/month"
+      description: "Essential support for small businesses with simple automation needs."
+      popular: false
+      features:
+        - "Email support"
+        - "Monthly system health check"
+        - "Bug fixes and minor updates"
+        - "Up to 2 support hours/month"
+        - "Monthly performance summary"
+      cta:
+        label: "Get Started Now"
+        url: "#contact"
+    - title: "Standard Support"
+      price: "KSh 20,000"
+      period: "/month"
+      description: "Proactive support for growing businesses with multiple automations."
+      popular: true
+      badge: "Most Popular"
+      features:
+        - "Priority email and chat support"
+        - "Biweekly system health checks"
+        - "Workflow optimization and updates"
+        - "Up to 8 support hours/month"
+        - "Monthly performance review"
+      cta:
+        label: "Get Started Now"
+        url: "#contact"
+    - title: "Enterprise Support"
+      price: "KSh 100,000+"
+      period: "/month"
+      description: "Dedicated support for complex, business-critical automation systems."
+      popular: false
+      features:
+        - "Priority technical support"
+        - "Continuous monitoring and maintenance"
+        - "Advanced optimization and integrations"
+        - "Dedicated account manager"
+        - "Custom support hours and SLA"
+      cta:
+        label: "Get Started Now"
+        url: "#contact"
+
+contact:
+  title:
+    prefix: "Automate"
+    middle: " Your Business "
+    highlight: "Growth"
+    suffix: " Now"
+  description: "Upgrade your business workflow, unlock deep insights, and boost efficiency through our tailored automation services — empowering you to make smarter decisions, save valuable time, and achieve sustainable growth."
+  cta:
+    label: "Book a free consultation"
+    url: "mailto:hello@florima.io"
+
+footer:
+  description: "Florima — we specialize in automating your business processes, optimizing workflows, and making operations more efficient."
+  columns:
+    menu:
+      title: "Menu"
+      links:
+        - label: "Why We"
+          url: "#"
+        - label: "About Us"
+          url: "#platform"
+        - label: "Contact"
+          url: "#contact"
+        - label: "How it works"
+          url: "#process"
+        - label: "Join Us"
+          url: "#contact"
+    services:
+      title: "Services"
+      links:
+        - label: "AI Chatbots & Support"
+          url: "#services"
+        - label: "Workflow Automation"
+          url: "#services"
+        - label: "Data Analytics & AI"
+          url: "#services"
+        - label: "CRM & Lead Management"
+          url: "#services"
+    contact:
+      title: "Contact Us"
+      phone: "+254"
+      email: "bd@florima.io"
+      address_line1: "Kirawa Road, Nairobi"
+      address_line2: "GK"
+  copyright: "Florima"
+  privacy:
+    label: "Privacy Policy"
+    url: "#"
+  terms:
+    label: "Terms & Conditions"
+    url: "#"

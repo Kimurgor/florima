@@ -1,0 +1,7 @@
+<section class="group overflow-hidden [mask-image:linear-gradient(90deg,transparent,#000_10%,#000_90%,transparent)] border-y border-[#27272A1F] bg-white" aria-label="Automation areas">
+  <div class="w-max animate-florima-marquee group-hover:[animation-play-state:paused] flex">
+    {{ range .Site.Data.content.logo_strip.items }}
+    <span class="grid min-h-[72px] min-w-[210px] place-items-center border-r border-[#27272A1F] text-sm font-medium uppercase tracking-[0.04em] text-[#09090B]">{{ . }}</span>
+    {{ end }}
+  </div>
+</section>

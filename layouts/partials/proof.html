@@ -1,0 +1,28 @@
+<section class="mx-auto w-[min(1180px,calc(100%_-_40px))] py-24" id="pricing">
+  {{ $d := .Site.Data.content.proof }}
+  <div class="mb-9 grid gap-5 lg:grid-cols-[minmax(0,1fr)_minmax(280px,420px)] lg:items-end">
+    <div>
+      <p class="mb-4 text-xs font-medium uppercase tracking-[0.13em] text-[#eb5b19]">{{ $d.badge }}</p>
+      <h2 class="max-w-[820px] text-[clamp(1.6rem,3.2vw,2.3rem)] font-medium leading-tight tracking-normal">{{ $d.title }}</h2>
+    </div>
+    <p class="text-florima-muted">{{ $d.description }}</p>
+  </div>
+  <div class="grid gap-5 lg:grid-cols-3">
+    {{ range $d.plans }}
+    <article class="relative overflow-hidden transition-[transform,border-color,box-shadow] duration-200 ease-out hover:-translate-y-1 hover:border-[rgba(235,91,25,0.42)] hover:shadow-[0_28px_70px_rgba(9,9,11,0.14)] before:content-[''] before:absolute before:inset-0 before:pointer-events-none before:opacity-0 before:bg-[radial-gradient(circle_at_18%_0%,rgba(235,91,25,0.12),transparent_15rem),linear-gradient(180deg,rgba(255,255,255,0.72),transparent_42%)] before:transition-opacity before:duration-200 before:ease-out hover:before:opacity-100 flex min-h-[430px] flex-col rounded-lg bg-white p-7{{ if .popular }} border-2 border-[#eb5b19] shadow-premium{{ else }} border border-[#27272A1F] shadow-card{{ end }}">
+      {{ if .popular }}
+      <p class="mb-4 w-fit rounded-lg bg-florima-soft px-3 py-1 text-xs font-medium uppercase tracking-[0.08em] text-florima-deep">{{ .badge }}</p>
+      {{ end }}
+      <h3 class="mb-2 text-lg font-medium leading-tight">{{ .title }}</h3>
+      <p class="mb-5 text-3xl font-medium text-florima-deep">{{ .price }}<span class="text-base text-florima-muted">{{ .period }}</span></p>
+      <p class="mb-6 text-florima-muted">{{ .description }}</p>
+      <ul class="mb-7 grid gap-2 text-sm font-light text-[#09090B]">
+        {{ range .features }}
+        <li>{{ . }}</li>
+        {{ end }}
+      </ul>
+      <a class="mt-auto inline-flex min-h-[50px] items-center justify-center rounded-lg bg-[#eb5b19] px-5 py-3 font-medium text-white transition hover:-translate-y-0.5 hover:bg-[#d44e14]" href="{{ .cta.url }}">{{ .cta.label }}</a>
+    </article>
+    {{ end }}
+  </div>
+</section>
