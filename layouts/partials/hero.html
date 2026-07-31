@@ -31,14 +31,14 @@
       </div>
 
       <div
-        class="mx-auto mt-16 flex max-w-xl items-stretch justify-center divide-x divide-[#eceae3]"
+        class="mx-auto mt-12 flex max-w-md items-stretch justify-center divide-x divide-[#eceae3] sm:mt-16 sm:max-w-xl"
       >
         {{ range .Site.Data.content.hero.stats }}
-        <div class="flex-1 px-4 sm:px-6">
-          <p class="text-3xl font-bold leading-none text-[#eb5b19]">
+        <div class="min-w-0 flex-1 px-2 sm:px-6">
+          <p class="text-[1.35rem] font-bold leading-none text-[#eb5b19] sm:text-3xl">
             {{ .value }}
           </p>
-          <p class="mt-2 text-sm text-black/55">{{ .label }}</p>
+          <p class="mt-1.5 text-xs leading-tight text-black/55 sm:mt-2 sm:text-sm sm:leading-normal">{{ .label }}</p>
         </div>
         {{ end }}
       </div>
