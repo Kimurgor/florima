@@ -20,7 +20,7 @@ hero:
   title:
     line1: "The automation stack behind"
     line2: "faster-growing businesses."
-  description: "One platform for your bots, workflows, and operations — built to scale from day one."
+  description: "One platform for your bots, workflows, and operations, built to scale from day one."
   buttons:
     primary:
       label: "Get Started"
@@ -170,13 +170,15 @@ contact:
     middle: " Your Business "
     highlight: "Growth"
     suffix: " Now"
-  description: "Upgrade your business workflow, unlock deep insights, and boost efficiency through our tailored automation services — empowering you to make smarter decisions, save valuable time, and achieve sustainable growth."
+  description: "Upgrade your business workflow, unlock deep insights, and boost efficiency through our tailored automation services, empowering you to make smarter decisions, save valuable time, and achieve sustainable growth."
   cta:
     label: "Book a free consultation"
     url: "mailto:hello@florima.io"
 
 footer:
-  description: "Florima — we specialize in automating your business processes, optimizing workflows, and making operations more efficient."
+  logo:
+    src: "/assets/footerlogo.png"
+  description: "Florima specializes in automating your business processes, optimizing workflows, and making operations more efficient."
   columns:
     menu:
       title: "Menu"

@@ -1,14 +1,14 @@
 <footer style="background-color: #fffefb; color: #09090B;">
   {{ $d := .Site.Data.content.footer }}
   <div class="mx-auto w-[min(1180px,calc(100%_-_40px))] py-16">
-    <div class="grid gap-12 md:grid-cols-[minmax(0,1.4fr)_1fr_1fr_1.2fr]">
+    <div class="grid gap-12 sm:grid-cols-2 lg:grid-cols-[minmax(0,1.4fr)_1fr_1fr_1.2fr]">
 
       <!-- Brand column -->
       <div>
         <a class="inline-flex items-center" href="#" aria-label="Florima home">
-          <img src="{{ .Site.Data.content.header.logo.src }}" alt="{{ .Site.Data.content.header.logo.alt }}" class="h-4 w-auto md:h-6" />
+          <img src="{{ .Site.Data.content.footer.logo.src }}" alt="{{ .Site.Data.content.footer.logo.alt }}" class="-ml-6 h-32 w-auto md:-ml-6 md:h-20" />
         </a>
-        <p class="mb-6 mt-4 max-w-[220px] text-sm leading-relaxed text-[#09090B]/50">{{ $d.description }}</p>
+        <p class="mb-6 -mt-6 max-w-[220px] text-sm leading-relaxed text-[#09090B]/50 md:-mt-2">{{ $d.description }}</p>
         <div class="flex gap-3">
           <!-- Facebook -->
           <a href="https://facebook.com" rel="noreferrer" class="grid h-9 w-9 place-items-center rounded-lg border text-[#09090B]/60 transition hover:border-[#eb5b19]/50 hover:text-[#09090B]" style="border-color: #eceae3; background-color: #f5f3ec;" aria-label="Facebook">
