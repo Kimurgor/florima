@@ -5,3 +5,20 @@ disableKinds = ["taxonomy", "term"]
 
 [params]
 description = "Florima is a full-service AI automation agency for bots, workflows, CRM, lead management, and operations."
+
+[minify]
+  minifyOutput = true
+
+[minify.tdewolff.html]
+  keepConditionalComments = true
+  keepDefaultAttrVals = true
+  keepDocumentTags = true
+  keepEndTags = true
+  keepQuotes = true
+  keepWhitespace = false
+
+[minify.tdewolff.js]
+  version = 2022
+
+[minify.tdewolff.css]
+  precision = 0
