@@ -22,3 +22,4 @@ description = "Florima is a full-service AI automation agency for bots, workflow
 
 [minify.tdewolff.css]
   precision = 0
+  keepCSS2 = true
